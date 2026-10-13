@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "local-agent-harness"
+version = "0.1.0"
+description = "A safe tool-calling harness for Foundry Local models"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+local-agent = "local_agent.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+

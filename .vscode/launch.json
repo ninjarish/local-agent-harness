@@ -1,0 +1,20 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Local Agent",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "local_agent",
+      "console": "integratedTerminal",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}\\src"
+      },
+      "args": [
+        "--workspace",
+        "${workspaceFolder}\\workspace"
+      ]
+    }
+  ]
+}
+
